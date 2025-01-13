@@ -129,7 +129,7 @@ By combining **RCoT** (multi-step reasoning in each agent), **parallel multi-age
      - FAISS for local vector storage
    - **Traditional Databases**:
      - PostgreSQL with pgvector
-     - MongoDB for document storage
+     - Local storage for documents
      - Redis for caching
 
 4. **Learning Pipeline Components**
