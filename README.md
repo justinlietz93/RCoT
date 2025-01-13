@@ -101,7 +101,7 @@ By combining **RCoT** (multi-step reasoning in each agent), **parallel multi-age
 
 1. **Model Integration & API Layer**
    - **Language Models**: 
-     - OpenAI API (GPT-4, GPT-3.5) for primary reasoning
+     - OpenAI API (GPT-4o, Claude 3-5 sonnet 20241022, Phi4, Qwen2.5 Coder, and custom models) for primary reasoning
      - Anthropic Claude API for specialized tasks
      - Local models via llama.cpp or vLLM for cost-effective scaling
      - Hugging Face Transformers for custom model deployment
