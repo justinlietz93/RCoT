@@ -5,7 +5,7 @@
 **Title**: Recursive Chain of Thought Multi-Agent Orchestration Architecture with Modular Self-Learning<br>
 **Author**: Justin Lietz<br>
 **Date**: January 12, 2025<br>
-**Status**: In Development
+**Status**: In Development<br>
 **NOTICE:** This document is currently in a draft state and may have incorrect information.
 </div>
 
