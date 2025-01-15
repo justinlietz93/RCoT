@@ -22,52 +22,8 @@ Below is an example **Mermaid** flowchart showing a **high-level self-data-colle
 
 ## Architecture Diagram
 
-```mermaid
+<img src="https://i.imgur.com/a0p8WBD.png" alt="RCoT Architecture Diagram" width="100%">
 
-flowchart TB
-    A((User Query)) --> B{RCoT / Multi-Agent<br>Orchestrator}
-    
-    subgraph Parallel Agents
-        direction TB
-        C1(Agent #1<br>RCoT Loop)
-        C2(Agent #2<br>RCoT Loop) 
-        C3(Agent #3<br>RCoT Loop)
-    end
-    
-    B --> C1
-    B --> C2
-    B --> C3
-    
-    C1 --> D((Tool<br>Calls?))
-    C2 --> D
-    C3 --> D
-    
-    D --> E{Aggregator /<br>Parallel RCoT Consensus}
-    
-    E --> F((Final Answer))
-    E --> G([Scoring &<br>Logging Model])
-    F --> G
-    
-    G --> H[Logs / Data<br>Collector]
-    
-    subgraph Self-Learning Pipeline
-        direction TB
-        H --> I{Scoring <br>Threshold?}
-        I -- "Score < Threshold" --> J((Self-Critique or<br>Refinement Prompt))
-        J --> K(Improved Output<br>Re-Score)
-        K --> L{Better Score?}
-        L -- "Yes" --> M([Store in<br>RAG / DB])
-        L -- "No" --> N([Keep <br>Original])
-        M --> O[(Fine-Tuning / RLHF)]
-        N --> O
-        O --> P((Updated Model))
-    end
-    
-    G --> I
-    F --> |Answers / Context| M
-    M --> |Reference Data| B
-    O --> |Periodic or 24/7<br>Updates| B
-```
 ### Explanation of Key Steps
 
 1. **User Query → Orchestrator**
