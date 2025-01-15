@@ -6,6 +6,7 @@
 **Author**: Justin Lietz<br>
 **Date**: January 12, 2025<br>
 **Status**: In Development
+**NOTICE:** This document is currently in a draft state and may have incorrect information.
 </div>
 
 ## Brief
